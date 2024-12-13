@@ -17,7 +17,7 @@ getUsers()
         emAdd = document.createElement("h3")
         phNum = document.createElement("h3")
         webSt = document.createElement("h3")
-        heading.innerHTML=info.name + " (" + info.username + ")" 
+        heading.innerHTML=info.name + " (@" + info.username + ")" 
         emAdd.innerHTML = "Email me at " + info.email
         phNum.innerHTML = "Phone number: " + info.phone
         webSt.innerHTML = "Check out my website! --> " + info.website

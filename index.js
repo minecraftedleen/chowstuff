@@ -17,14 +17,18 @@ getUsers()
         emAdd = document.createElement("h3")
         phNum = document.createElement("h3")
         webSt = document.createElement("h3")
+        stLnk = document.createElement("a")
         heading.innerHTML=info.name + " (@" + info.username + ")" 
         emAdd.innerHTML = "Email me at " + info.email
         phNum.innerHTML = "Phone number: " + info.phone
-        webSt.innerHTML = "Check out my website! --> " + info.website
+        webSt.innerHTML = "Check out my website!"
+        stLnk.href = info.website
+        stLnk.innerHTML = info.website
         block.append(heading)
         block.append(emAdd)
         block.append(phNum)
         block.append(webSt)
+        block.append(stLnk)
         document.body.append(block)
     }
     

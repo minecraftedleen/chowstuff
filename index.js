@@ -4,6 +4,8 @@ async function getUsers(){
     return users
 }
 
+
+
 getUsers()
 .then((json)=>{
     let data=document.getElementById('data')
@@ -29,6 +31,9 @@ getUsers()
         block.append(phNum)
         block.append(webSt)
         block.append(stLnk)
+        block.addEventListener("click", function(){
+            alert(info.name + " (@" + info.username + ")\n" + "Email me at " + info.email + "\n" +  "Phone number: " + info.phone + "\n" + "Check out my website!\n"  + info.website)
+        })
         document.body.append(block)
     }
     
